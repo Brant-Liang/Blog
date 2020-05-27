@@ -6,11 +6,11 @@ export default function Header() {
   return (
     <NavHeader>
       <Row justify="center" align="middle">
-        <Col flex xs={24} sm={24} md={10} lg={15} xl={12}>
+        <Col xs={24} sm={24} md={14} lg={15} xl={15}>
           <HeaderLogo>Brant-Liang</HeaderLogo>
           <HeaderDesc>专注前端学习、开发</HeaderDesc>
         </Col>
-        <Col xs={0} sm={0} md={14} lg={8} xl={6}>
+        <Col flex justify="right" xs={0} sm={0} md={10} lg={8} xl={6}>
           <Menu mode="horizontal">
             <Menu.Item key="home" icon={<HomeOutlined />}>
               首页
