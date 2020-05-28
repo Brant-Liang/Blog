@@ -4,7 +4,10 @@ import { Breadcrumb } from 'antd'
 import MainList from '../../components/List'
 import Ad from '../../components/Ad'
 import Author from '../../components/Author'
-export default function Home() {
+import axios from 'axios'
+import { getArticleList } from '../../network/home'
+
+function Home() {
   return (
     <Main justify="center">
       <MainLeft>
@@ -12,12 +15,13 @@ export default function Home() {
           <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
           <Breadcrumb.Item><a href="/">视频列表</a></Breadcrumb.Item>
         </Breadcrumb>
-        <MainList/>
+        <MainList />
       </MainLeft>
       <MainRight>
-        <Author/>
-        <Ad/>
+        <Author />
+        <Ad />
       </MainRight>
     </Main>
   )
 }
+export default Home;
